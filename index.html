@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="./js/script.js" defer></script>
+    <title>Tabuada Dinâmica</title>
+</head>
+
+<body>
+
+    <div id="bg_img"></div>
+
+    <div id="main_container">
+
+        <h1>Tabuada Dinâmica com JS</h1>
+
+        <div id="table_container">
+            <div id="description">
+                <h2>Digite o número na caixa</h2>
+                <p class="error hidden"></p>
+                <div id="number_input">
+                    <input type="text" name="number" id="number" min="0" max="10" placeholder="número de 0 a 10">
+                    <input type="button" value="Criar Tabuada" id="btn">
+                </div>
+            </div>
+            <div id="result">
+                <div id="result_text">
+                    <h2>Tabuada do número:</h2>
+                    <span id="result_text_number"></span>
+                </div>
+                <div id="exibition_screen_result">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <h3>2024 &copy;. Desenvolvido por Luiz Inaldo</h3>
+    </footer>
+
+</body>
+
+</html>

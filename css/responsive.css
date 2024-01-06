@@ -1,0 +1,66 @@
+/* Laptop 1024px */
+@media (max-width: 1024px){
+
+    #main_container h1 {
+        font-size: 50px;
+        top: 20px;
+        left: 0px;
+    }
+
+    #table_container {
+        justify-content: space-between;
+    }
+
+    #description {
+        margin-left: 2rem;
+    }
+
+    #result {
+        margin-top: 50px;
+    }
+
+}
+
+
+
+/* tablets 768px */
+@media (max-width: 768px) {
+
+    #main_container {
+        height: 100%;
+    }
+
+    #main_container h1 {
+        position: static;
+    }
+
+    #table_container {
+        flex-direction: column;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #description {
+        margin-left: 0;
+    }
+
+    #result {
+        margin: 50px 0;
+    }
+
+    footer {
+        position: static;
+        padding: .5rem 1rem;
+    }
+
+}
+
+
+/* mobile 425px */
+@media (max-width: 425px){
+
+    footer {
+        text-align: center;
+    }
+
+}

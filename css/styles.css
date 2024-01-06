@@ -1,0 +1,170 @@
+/* global and reset */
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=MedievalSharp&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Handlee', cursive;
+}
+
+/* main container */
+#main_container {
+    height: 100%;
+}
+
+#main_container h1 {
+    font-size: 60px;
+    color: #ffff6c;
+    filter: drop-shadow(2px 2px 1px #333);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: .5rem;
+}
+
+#bg_img {
+    position: fixed;
+    z-index: -1;
+    background: url('/img/wallpaper_tabuada.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+#bg_img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    background: rgba(255, 255, 255, 0.4);
+    width: 100vw;
+    height: 100vh;
+}
+
+/* table container */
+#table_container {
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* left container (description) */
+#description {
+    width: 400px;
+    height: 230px;
+    background: #f2a6ff;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 1rem;
+    text-align: center;
+}
+
+#description h2 {
+    color: #fff;
+    font-size: 30px;
+    filter: drop-shadow(1px 1px 1px #333);
+}
+
+#description .error {
+    margin-top: 20px;
+    color: #f00;
+    transition: 1.5s;
+}
+
+.hidden {
+    opacity: 0;
+    transition: 1.0s;
+}
+
+.visible {
+    opacity: 1;
+    transition: 1.5s;
+}
+
+#description input[type="text"] {
+    margin-top: 20px;
+    width: 300px;
+    font-size: 20px;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 10px;
+}
+
+#description input[type="button"] {
+    margin-top: 10px;
+    font-size: 17px;
+    padding: 10px 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background: #e032ff;
+    color: #fafafa;
+}
+
+
+/* right container (result) */
+
+#result {
+    width: 400px;
+    height: 500px;
+    background: #f2a6ff;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 1rem;
+}
+
+#result_text {
+    display: flex;
+}
+
+#result_text h2 {
+    color: #fff;
+    font-size: 35px;
+    filter: drop-shadow(1px 1px 1px #333);
+}
+
+#result_text span {
+    border-radius: 10px;
+    font-size: 35px;
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    background: #fafafa;
+}
+
+#exibition_screen_result {
+    width: 340px;
+    height: 380px;
+    margin: 20px auto 0;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.final_result {
+    font-size: 25px;
+    border-bottom: 1px solid #f0f0f0;
+    width: 150px;
+    margin: 0 auto;
+    line-height: 1;
+}
+
+/* footer */
+
+footer {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+}
